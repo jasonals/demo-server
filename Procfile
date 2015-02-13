@@ -1,2 +1,2 @@
-web: index.js
+web: node index.js
 dev: nodemon index.js
