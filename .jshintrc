@@ -1,0 +1,9 @@
+{
+  "esnext": true,
+  "indent": 2,
+  "undef": true,
+  "unused": true,
+  "node": true,
+  "browser": true,
+  "globals": {"DEBUG":false, "__srcpath": false}
+}

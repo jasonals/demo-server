@@ -2,19 +2,20 @@
   "name": "hapi-heroku",
   "version": "0.1.0",
   "description": "hapi example app running on heroku",
-  "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wpreul/hapi-heroku.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "author": "Wyatt Preul",
+  "author": "Jason Als",
   "license": "MIT",
-  "readmeFilename": "README.md",
   "dependencies": {
-    "hapi": "^6.2.0",
-    "joi": "^4.6.1"
+    "6to5": "^3.6.2",
+    "faker": "^2.1.2",
+    "hapi": "^8.2.0",
+    "joi": "^5.1.0",
+    "lodash": "^3.2.0"
   },
   "engines": {
-    "node": ">=0.10.x"
+    "node": ">=0.12.x"
   }
 }

@@ -1,1 +1,2 @@
-web: node main.js
+web: index.js
+dev: nodemon index.js
