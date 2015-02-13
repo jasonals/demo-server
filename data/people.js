@@ -7,7 +7,7 @@ let people = _.times(50, n => ({
     avatar: faker.internet.avatar(),
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
-    href: `https:///user/${n}`
+    href: `https://lunchorders.herokuapp.com/user/${n}`
   })
 );
 
