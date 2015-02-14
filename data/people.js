@@ -1,9 +1,6 @@
 let _ = require('lodash');
 
 let faker = require('faker');
-var simplexml = require('simplexml');
-
-
 
 let people = _.times(50, n => ({
     id: n,
@@ -15,12 +12,8 @@ let people = _.times(50, n => ({
   })
 );
 
-
-let all = function() { return people; };
-let xml = function() {
-  return simplexml.toXML(people);
-};
+let all = () => people;
 let findById = (id) => _.find(people, person => person.id == id );
 let filterById = (ids) => _.filter(people, {id: ids.map( id => +id)} );
 
-module.exports = { all, findById, filterById , xml};
+module.exports = { all, findById, filterById};

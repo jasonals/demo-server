@@ -1,16 +1,11 @@
-hapi-heroku
+demo-server
 ===========
 
-A sample app running hapi on heroku
+A sample server running hapi for demo during a workshop
 
 
 ## Getting started
 
-Before cloning this repository and reploying to heroku install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-1. `git clone git://github.com/wpreul/hapi-heroku.git && cd hapi-heroku`
-2. `heroku login`
-3. `heroku create`
-4. `git push heroku master`
-5. `heroku ps:scale web=1`
-5. `heroku open`
+1. `git clone https://github.com/jasonals/demo-server && cd demo-server`
+2. `node index.js`
+3. go to http://localhost:3000

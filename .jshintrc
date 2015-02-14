@@ -4,6 +4,5 @@
   "undef": true,
   "unused": true,
   "node": true,
-  "browser": true,
-  "globals": {"DEBUG":false, "__srcpath": false}
+  "browser": true
 }

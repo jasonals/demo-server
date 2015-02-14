@@ -1,10 +1,10 @@
 {
-  "name": "hapi-heroku",
+  "name": "demo-server",
   "version": "0.1.0",
-  "description": "hapi example app running on heroku",
+  "description": "hapi example app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/jasonals/demo-server"
   },
   "author": "Jason Als",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "simplexml": "0.0.3"
   },
   "engines": {
-    "node": ">=0.12.x"
+    "node": "0.12.x"
   }
 }
