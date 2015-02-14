@@ -4,7 +4,7 @@ let server = new Hapi.Server();
 server.connection({
   host: '0.0.0.0',
   port: process.env.PORT || 3000,
-  cors: true
+  routes: { cors: true } 
 });
 
 let people = require('./data/people');
