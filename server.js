@@ -4,7 +4,7 @@ let server = new Hapi.Server();
 server.connection({
   host: '0.0.0.0',
   port: process.env.PORT || 3000,
-  routes: { cors: true } 
+  routes: { cors: true }
 });
 
 let people = require('./data/people');
@@ -12,7 +12,7 @@ let people = require('./data/people');
 
 server.route([
   { method: 'get', path: '/', handler: (request, reply) => reply('home') },
-  { method: 'post', path: '/users', handler: (request, reply) => reply(people.all()) },
+  { method: 'get', path: '/users', handler: (request, reply) => reply(people.all()) },
   { method: 'get', path: '/users/xml', handler: (request, reply) => reply(people.xml()) },
   { method: 'get', path: '/user/{id}', handler: (request, reply) => reply( people.findById(request.params.id) ) },
 ]);
