@@ -19,15 +19,10 @@ server.connection({
 let people = require('./data/people');
 
 let users = (request, reply) => {
-  console.log(request.headers);
   reply(people.all());
 };
 
 let home = (request, reply) => {
-  server.inject({ url: '/users', headers: { origin: 'http://jsbin.com' } }, function (res) {
-    console.log(res.headers);
-  });
-
   reply('home');
 };
 
