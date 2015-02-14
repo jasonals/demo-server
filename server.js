@@ -4,7 +4,7 @@ let server = new Hapi.Server();
 server.connection({
   host: '0.0.0.0',
   port: process.env.PORT || 3000,
-  cors: true 
+  cors: true
 });
 
 let people = require('./data/people');
@@ -16,14 +16,6 @@ server.route([
   { method: 'get', path: '/users/xml', handler: (request, reply) => reply(people.xml()) },
   { method: 'get', path: '/user/{id}', handler: (request, reply) => reply( people.findById(request.params.id) ) },
 ]);
-
-
-Array.prototype.push.apply(myArray, myNexxtArray);
-
-var
-
-// b = 2
-
 
 
 server.start(function () {
