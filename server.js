@@ -1,6 +1,8 @@
 let Hapi = require('hapi');
 var simplexml = require('simplexml');
 
+let people = require('./data/people');
+
 let server = new Hapi.Server({
   connections: {
     routes: {
@@ -13,10 +15,9 @@ let server = new Hapi.Server({
 
 server.connection({
   host: '0.0.0.0',
-  port: process.env.PORT || 3000
+  port: process.env.PORT || 8000
 });
 
-let people = require('./data/people');
 
 let users = (request, reply) => {
   reply(people.all());
